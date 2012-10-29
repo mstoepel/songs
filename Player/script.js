@@ -18,22 +18,31 @@ $(function() {
     
     changeSong();
     
-  })
-  
-  
+  }) 
+
   changeSong = function() {
-    $(".artist").val('New Artist')
-    $(".title").val("New Title")
-    $("#songId").val('13212155');
+
+    var next = Math.floor(Math.random() * (data.length - 1))
+    var song = data[next]
+
+    $("#artistName").html(song.artistName)
+    $("#songTitle").html(song.songTitle)
+    $("#songId").val(song.id);
     
     var player = $("#audioPlayer")
-    $("source", player).attr('src', 'http://previews.7digital.com/clips/34/13212155.clip.mp3')
+    $("source", player).attr('src', song.songPreview)
     
     player[0].pause()
     player[0].load()
-    player[0].play()
+
+    if ($('#autoplay').is(':checked')) {
+        player[0].play()
+    }
+    
     
     
   }
+
+  setTimeout(500, changeSong())
   
 });

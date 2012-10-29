@@ -7,17 +7,26 @@
 	<body>
     <div class="container">
       <h2>Do you like this song?</h2>
-	  <span id="artist">Asking Alexandria</span> - <span class="title">Good Question</span> </p>
+      <p><span id="artistName"></span> - <span id="songTitle"></span></p>
       <audio controls="controls" id="audioPlayer">
-        <source src="http://previews.7digital.com/clips/34/13212872.clip.mp3" type="audio/mpeg">
+        <source src="" type="audio/mpeg">
       </audio>
       <ul class="menu">
         <li><a href="#" class="like">I like this</a></li>
         <li><a href="#" class="nolike">I don't like this</a></li>
       </ul>
-    </div>
+
+     <div style="clear:both"></div>
     
-    <input type="hidden" value="13212872" id="songId" />
+    <p>
+      <input type="checkbox" value="0" name="autoplay" id="autoplay" /><label for="autoplay">Auto-play next song?</label>
+    </p>
+
+    </div>
+
+
+
+    <input type="hidden" value="0" id="songId" />
     
     
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
