@@ -1,0 +1,15 @@
+ul.menu {
+  list-style: none; /* No bullets, that's gay */
+  width: 200px;
+  margin: 0 auto;
+}
+ul.menu li {
+  float: left; /* Forces each line item to attached their left side to the right side of previous element */
+  margin: 0 10px; /* Puts spacing between these elements */
+}
+
+.container { 
+  width: 500px;  
+  margin: 10px auto; /* Makes the div with class container centered */
+  text-align: center;
+}

@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+   <head>
+		<link rel="stylesheet" href="style.css" />
+		<title>Music Recommendation by Michael Stoepel</title>
+	</head>
+	<body>
+    <div class="container">
+      <h2>Do you like this song?</h2>
+	  <span id="artist">Asking Alexandria</span> - <span class="title">Good Question</span> </p>
+      <audio controls="controls" id="audioPlayer">
+        <source src="http://previews.7digital.com/clips/34/13212872.clip.mp3" type="audio/mpeg">
+      </audio>
+      <ul class="menu">
+        <li><a href="#" class="like">I like this</a></li>
+        <li><a href="#" class="nolike">I don't like this</a></li>
+      </ul>
+    </div>
+    
+    <input type="hidden" value="13212872" id="songId" />
+    
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="data.js" type="text/javascript"></script>
+    <script src="script.js" type="text/javascript"></script>
+	</body>
+</html>
